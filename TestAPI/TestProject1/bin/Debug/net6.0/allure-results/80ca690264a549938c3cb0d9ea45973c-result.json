@@ -1,0 +1,100 @@
+{
+  "uuid": "86306022785742578538a266cc3f338f",
+  "historyId": "Update a product that exist",
+  "fullName": "Update a product that exist",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "0054-AN-04"
+    },
+    {
+      "name": "feature",
+      "value": "Update Product"
+    }
+  ],
+  "links": [],
+  "name": "Update a product that exist",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the following product ID: 17",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686319418158,
+      "stop": 1686319418160
+    },
+    {
+      "name": "And  I have a product with the following details for update:",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "881d0e869e494eca979838d801e5918c-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1686319418160,
+      "stop": 1686319418163
+    },
+    {
+      "name": "When  I send a PUT request to \"/api/products/{productId}\" with the product details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686319418163,
+      "stop": 1686319418386
+    },
+    {
+      "name": "Then  the response status code can be 403",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686319418386,
+      "stop": 1686319418387
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686319418158,
+  "stop": 1686319418387
+}
